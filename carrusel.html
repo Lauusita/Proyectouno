@@ -3,15 +3,12 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-      <a href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" type="submit" class="btn btn-primary">Enviar</a> 
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
       <title>Bootstrap demo</title>
 
     </head>
     <body>
       <center><h1 style="background-color: rebeccapurple;">lindos perritos</h1></center> 
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
       <div id="carouselExampleDark" class="carousel carousel-dark slide">
           <div class="carousel-indicators">
@@ -23,22 +20,66 @@
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="perro.jpeg" class="d-block w-100" alt="500">
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+                <h5 style="color: azure;">¡Qué lindo perrito!</h5>
+                <p>
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Por qué son importantes?</a>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Al perrito le gusta System of a down</button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="card card-body">
+                        los perros han desarrollado un músculo alrededor de los ojos destinado exclusivamente a enternecernos y a inspirarnos sentimientos de afecto y protección.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-body">
+                        Al perrito le gusta el Nu metal
+                        <a type="button" class="btn btn-info" href="https://www.youtube.com/watch?v=CSvFpBOe8eY">Chop suey</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img src="cachorro.jpeg" class="d-block w-100" alt="500">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5 style="color: azure;">¡Qué lindos ojitos tiene!</h5>
+                <p>
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Son muy dramáticos</a>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">El perrito te quiere enseñar Python</button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="card card-body">
+                        La razón de su carisma se basa en que son perros inteligentes, alocados y amigables, que gracias a su carácter se han convertido en los protagonistas de muchos videos adorables.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-body">
+                        El perrito es un experto en programación
+                        <a type="button" class="btn btn-info" href="https://www.youtube.com/watch?v=nKPbfIU442g">Python</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
               <img src="los-10-sonidos-principales-del-perro.jpeg" class="d-block w-100" alt="500">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+                <h5>¡Encuesta!</h5>
+                <p>Te invito a realizar la siguiente encuenta de satisfacción.</p>
+                <a type="button" class="btn btn-danger" href="encuesta.html">Encuesta</a>
+
               </div>
             </div>
           </div>
@@ -51,5 +92,6 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
   </html>
